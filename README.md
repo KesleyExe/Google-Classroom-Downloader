@@ -74,12 +74,9 @@ No more hunting through 47 announcements to find that one lab report from Septem
 - [Python 3.12+](https://python.org/downloads) installed
 - A Google account enrolled in Google Classroom courses
 
-### Installation
+### Please take a look at the requirements before using the program
 
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/classroom-downloader.git
-cd classroom-downloader
+VIDEO ENJOY
 
-# Install required packages
-pip install -r requirements.txt
+https://github.com/user-attachments/assets/4add0205-addd-45f6-9be9-25593e29876a
+
