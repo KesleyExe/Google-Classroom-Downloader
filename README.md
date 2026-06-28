@@ -69,12 +69,17 @@ No more hunting through 47 announcements to find that one lab report from Septem
 
 ## Quick Start
 
+### Prerequisites
+
+- [Python 3.12+](https://python.org/downloads) installed
+- A Google account enrolled in Google Classroom courses
+
+### Installation
+
 ```bash
-# 1. Install Python (python.org)
-# 2. Install the tool
-pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
+# Clone the repo
+git clone https://github.com/yourusername/classroom-downloader.git
+cd classroom-downloader
 
-# 3. Run it
-py main.py
-
-# 4. Sign in, pick courses, done
+# Install required packages
+pip install -r requirements.txt
