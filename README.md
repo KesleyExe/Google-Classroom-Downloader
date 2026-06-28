@@ -74,7 +74,7 @@ No more hunting through 47 announcements to find that one lab report from Septem
 - [Python 3.12+](https://python.org/downloads) installed
 - A Google account enrolled in Google Classroom courses
 
-### Please take a look at the requirements before using the program
+## Please take a look at the requirements before using the program
 
 ### VIDEO ENJOY
 
