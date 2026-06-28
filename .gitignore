@@ -1,1 +1,46 @@
+# Secrets - NEVER commit these
+credentials.json       ← Your OAuth client secret (the "ID card" for Google)
+token.pickle           ← Your saved login session (generated after first sign-in)
+*.pickle               ← Any other session files
+.env                   ← Environment variables (if you use them)
+*.env
 
+# Python - Auto-generated files you don't need
+__pycache__/           ← Compiled Python bytecode
+*.py[cod]              ← More compiled files
+*.so                   ← Shared object files
+.Python                ← Virtual environment marker
+build/                 ← Build artifacts
+develop-eggs/          ← Development egg files
+dist/                  ← Distribution files
+downloads/             ← Downloaded packages
+eggs/                  ← Egg files
+.eggs/                 ← Hidden egg files
+lib/                   ← Library files
+lib64/                 ← 64-bit library files
+parts/                 ← Build parts
+sdist/                 ← Source distribution
+var/                   ← Variable files
+wheels/                ← Wheel files
+*.egg-info/            ← Egg metadata
+.installed.cfg         ← Installation config
+*.egg                  ← Egg packages
+env/                   ← Virtual environment
+venv/                  ← Another virtual environment
+ENV/                   ← Another virtual environment
+env.bak/               ← Backup environment
+venv.bak/              ← Backup environment
+
+# IDE - Editor files
+.vscode/               ← VS Code settings
+.idea/                 ← PyCharm settings
+*.swp                  ← Vim swap files
+*.swo                  ← Vim swap files
+*~                     ← Backup files
+
+# OS - Operating system files
+.DS_Store              ← macOS metadata
+Thumbs.db              ← Windows thumbnail cache
+
+# Downloads - Your downloaded coursework
+ClassroomDownloads/    ← Don't upload your downloaded files to GitHub!
