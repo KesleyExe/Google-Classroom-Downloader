@@ -1,0 +1,111 @@
+Step 1: Go to Google Cloud Console
+- Open your browser and go to:
+https://console.cloud.google.com/
+- Sign in with the same Google account you use for Google Classroom.
+
+
+Step 2: Create a New Project
+- At the very top of the page, click the dropdown that says "Select a project"
+- Click "New Project" in the popup
+- Give it a name:
+- Project name: Classroom Downloader
+- Leave "Location" as default
+- Click "Create"
+- Wait a few seconds, then select your new project from the dropdown
+
+
+Step 3: Enable the APIs
+- Google Classroom and Google Drive APIs are off by default. You need to turn them on:
+- In the left sidebar, click "APIs & Services" → "Library"
+- In the search bar, type: "Google Classroom API"
+- Click on "Google Classroom API" in the results
+- Click the blue "Enable" button
+- Wait for it to finish (you'll see a green checkmark)
+- Go back to the Library (click the back arrow or search again)
+- Search for: "Google Drive API"
+- Click on "Google Drive API"
+- Click the blue "Enable" button
+
+
+Step 4: Configure the OAuth Consent Screen
+- This is the "Sign in with Google" popup that appears when you run the tool:
+- In the left sidebar, click "APIs & Services" → "OAuth consent screen"
+- Under "User Type", select "External"
+- This means anyone with a Google account can use it (including you)
+- Click "Create"
+- Fill in the app information:
+- App name: Classroom Downloader
+- User support email: Your email address (pick from dropdown)
+- App logo: Skip this (optional)
+- App domain: Leave blank
+- Developer contact information: Your email address
+- Click "Save and Continue"
+- On the "Scopes" screen:
+- Click "Add or Remove Scopes"
+- In the filter box, search for each of these and check the box:
+.../auth/classroom.courses.readonly
+.../auth/classroom.courseworkmaterials.readonly
+.../auth/classroom.coursework.students.readonly
+.../auth/classroom.announcements.readonly
+.../auth/drive.readonly
+- Click "Update" at the bottom
+- Click "Save and Continue"
+- On the "Test users" screen:
+- Click "+ Add Users"
+- Type your email address
+- Click "Add"
+- Click "Save and Continue"
+- On the "Summary" screen, just click "Back to Dashboard"
+- Important: Your app stays in "Testing" mode. That's fine for personal use. Don't click "Publish" unless you want strangers to use your app (which requires a privacy policy and Google verification).
+
+Step 5: Create Your Credentials File
+- Now you create the actual credentials.json file:
+- In the left sidebar, click "APIs & Services" → "Credentials"
+- https://i.imgur.com/placeholder4.png
+- At the top, click "+ Create Credentials"
+- Select "OAuth 2.0 Client ID"
+- On the next screen:
+- Application type: Select "Desktop app"
+- ⚠️ This is important! Don't pick "Web application" or "Android"
+- Name: Classroom Downloader Desktop
+- Click "Create"
+- A popup appears showing your Client ID and Client Secret
+- Don't close this yet!
+- Click "Download JSON" (the blue button)
+- Save the file to your computer (probably goes to Downloads)
+
+Step 6: Put the File in Your Project Folder
+- Find the downloaded file in your Downloads folder
+- It will be named something like client_secret_123456789-abc123.apps.googleusercontent.com.json
+Rename it to exactly: 
+    credentials.json
+Move it to your project folder:
+    C:\Users\Test\Downloads\Google Classroom Downloader\
+Your folder should now look like this:
+    Google Classroom Downloader/
+    ├── .gitignore
+    ├── README.md
+    ├── requirements.txt
+    ├── main.py
+    └── credentials.json    ← You just added this
+
+Step 7: Verify It Works
+Open PowerShell in your project folder and run:
+    powershell
+    py main.py
+If everything worked:
+    A browser tab opens
+    You sign in with Google
+    You might see a warning — click "Advanced" → "Go to Classroom Downloader (unsafe)"
+    Click "Allow" for the permissions
+    Return to PowerShell
+    You should see your courses listed!
+
+Common Mistakes
+- Picked "Web application" instead of "Desktop app"	
+- Delete the credential, create a new one with "Desktop app"
+- Forgot to enable both APIs	Go back to Library, search for both, click Enable
+- Didn't add myself as a test user	Go to OAuth consent screen → Test users → Add your email
+- File is still named client_secret_...json	Rename it to exactly credentials.json
+- Put it in the wrong folder	
+- Make sure it's in the same folder as main.py
