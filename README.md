@@ -76,7 +76,7 @@ No more hunting through 47 announcements to find that one lab report from Septem
 
 ### Please take a look at the requirements before using the program
 
-VIDEO ENJOY
+### VIDEO ENJOY
 
 https://github.com/user-attachments/assets/4add0205-addd-45f6-9be9-25593e29876a
 
